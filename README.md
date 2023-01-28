@@ -20,7 +20,7 @@
 | 2주차 | **자료구조** |()|[해설](https://blog.encrypted.gg/727)|[바로가기](./02.%20data_structure)|
 | 3주차 | **재귀/DP** |()|[재귀해설](https://blog.encrypted.gg/943)<br>[DP해설](https://blog.encrypted.gg/974)|[바로가기](./03.%20DP)|
 | 4주차 | **그래프** |()|[해설](https://blog.encrypted.gg/1016)|[바로가기](./04.%20graph)|
-| 5주차 | **최단경로** |()||[바로가기](./05.%20shortest%20path)|
+| 5주차 | **최단경로** |()|[해설](https://blog.encrypted.gg/1037)|[바로가기](./05.%20shortest%20path)|
 | 6주차 | **이분탐색** |()|[해설](https://blog.encrypted.gg/985)|[바로가기](./06.%20binary%20search)|
 | 7주차 | **분할정복** |()||[바로가기](./07.%20divide%20and%20conquer)|
 | 8주차 | **그리디** |()|[해설](https://blog.encrypted.gg/975)|[바로가기](./08.%20greedy)|
