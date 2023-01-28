@@ -1,4 +1,4 @@
-# Data Structre (자료구조)
+# Data Structure (자료구조)
 
 이 자료구조에서는 큐, 스택, 덱을 익히는 문제들로 뽑았습니다.
 
