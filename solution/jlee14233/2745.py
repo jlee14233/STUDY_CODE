@@ -27,3 +27,10 @@ index='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 i = [index.find(a[sol])*(int(b)**(len(a)-1-sol)) for sol in range(0,len(a))]
 
 print(sum(i))
+
+# Sum=0
+# for sol in range(0,len(a)):
+#     t=index.find(a[sol])*(int(b)**(len(a)-1-sol))
+#     Sum+=t
+
+# print(Sum)
