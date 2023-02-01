@@ -49,21 +49,3 @@ while 1:
     if (num == x):
         break
 print(count)
-
-
-    # if n==sol:
-    #     count+=1
-    #     break
-    
-    # elif len(n)==1:
-    #     a=0
-    #     b=int(n[0])
-    #     n=str(int(a+b))
-    #     count+=1
-
-    # else:
-    #     a=int(n[0])
-    #     b=int(n[1])
-    #     n=str(int(a+b))
-    #     count+=1
-# print(count)
