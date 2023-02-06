@@ -41,7 +41,7 @@
 
 ---
 # REFERENCE
-##Python
+## Python
 ### 1. [VSFe](https://github.com/VSFe)
 
 #### 정보
@@ -56,7 +56,7 @@
 </table>
 
 
-##C++
+## C++
 ### 2. [BaaaaaaaaaaarkingDog](https://github.com/encrypted-def)
 
 <table>
