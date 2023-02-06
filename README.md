@@ -17,19 +17,19 @@
 |  주차 | 주제 | python  | c++ | 문제집 |
 |:---:|:---:|:---:|:---:|:---:|
 | 1주차 | **수학** |()|[해설](https://blog.encrypted.gg/983)|[바로가기](./01.%20Math)|
-| 2주차 | **자료구조** |[해설](02. data_structure\Ch.01_기본_자료구조.pdf)|[해설](https://blog.encrypted.gg/727)|[바로가기](./02.%20data_structure)|
-| 3주차 | **재귀/DP** |[해설](03. DP\Ch.10_동적계획법.pdf)|[재귀해설](https://blog.encrypted.gg/943)<br>[DP해설](https://blog.encrypted.gg/974)|[바로가기](./03.%20DP)|
-| 4주차 | **그래프** |[해설](04. Graph\Ch.06_그래프_탐색.pdf)|[해설](https://blog.encrypted.gg/1016)|[바로가기](./04.%20graph)|
+| 2주차 | **자료구조** |[해설](02.%20data_structure//Ch.01_기본_자료구조.pdf)|[해설](https://blog.encrypted.gg/727)|[바로가기](./02.%20data_structure)|
+| 3주차 | **재귀/DP** |[해설](03.%20DP\Ch.10_동적계획법.pdf)|[재귀해설](https://blog.encrypted.gg/943)<br>[DP해설](https://blog.encrypted.gg/974)|[바로가기](./03.%20DP)|
+| 4주차 | **그래프** |[해설](04.%20Graph//Ch.06_그래프_탐색.pdf)|[해설](https://blog.encrypted.gg/1016)|[바로가기](./04.%20graph)|
 | 5주차 | **최단경로** |()|[해설](https://blog.encrypted.gg/1037)|[바로가기](./05.%20shortest%20path)|
-| 6주차 | **이분탐색** |[해설](06. binary search\Ch.04_이분탐색.pdf)|[해설](https://blog.encrypted.gg/985)|[바로가기](./06.%20binary%20search)|
+| 6주차 | **이분탐색** |[해설](06.%20binary%20search//Ch.04_이분탐색.pdf)|[해설](https://blog.encrypted.gg/985)|[바로가기](./06.%20binary%20search)|
 | 7주차 | **분할정복** |()||[바로가기](./07.%20divide%20and%20conquer)|
-| 8주차 | **그리디** |[해설](08. Greedy\Ch.05_탐욕법.pdf)|[해설](https://blog.encrypted.gg/975)|[바로가기](./08.%20greedy)|
-| 9주차 | **완전탐색, 시뮬레이션** |[해설](09. Brute Force\Ch.02_완전탐색.pdf)|[sim해설](https://blog.encrypted.gg/948)|[바로가기](./09.%20simulation)|
-| 10주차 | **구현** |[해설](10. implementation\Ch.08_구현력_트레이닝_Python.pdf)||[바로가기](./10.%20implementation)|
+| 8주차 | **그리디** |[해설](08.%20Greedy//Ch.05_탐욕법.pdf)|[해설](https://blog.encrypted.gg/975)|[바로가기](./08.%20greedy)|
+| 9주차 | **완전탐색, 시뮬레이션** |[해설](09.%20Brute%20Force//Ch.02_완전탐색.pdf)|[sim해설](https://blog.encrypted.gg/948)|[바로가기](./09.%20simulation)|
+| 10주차 | **구현** |[해설](10.%20implementation//Ch.08_구현력_트레이닝_Python.pdf)||[바로가기](./10.%20implementation)|
 | 11주차 | **문자열** |()|[해설](https://blog.encrypted.gg/857)|[바로가기](./11.string)|
-| 12주차 | **투 포인터, 슬라이딩 윈도우** |[해설](12. two pointer\Ch.09_부분합_투포인터.pdf)|[해설](https://blog.encrypted.gg/1004)|[바로가기](./12.%20two%20pointer)|
+| 12주차 | **투 포인터, 슬라이딩 윈도우** |[해설](12.%20two%20pointer//Ch.09_부분합_투포인터.pdf)|[해설](https://blog.encrypted.gg/1004)|[바로가기](./12.%20two%20pointer)|
 | 13주차 | **백 트래킹** |()|[해설](https://blog.encrypted.gg/945)|[바로가기](./13.%20backtracking)|
-| 14주차 | **트리**|[해설](14. tree\Ch.11_트리.pdf)|[해설](https://blog.encrypted.gg/1019)|[바로가기](./14.%20tree)|
+| 14주차 | **트리**|[해설](14.%20tree//Ch.11_트리.pdf)|[해설](https://blog.encrypted.gg/1019)|[바로가기](./14.%20tree)|
 
 
 ---
