@@ -35,10 +35,13 @@
 ---
 ## RULE
 
+#### solution에 자기가 푼 문제들을 자기 폴더에 commit 하고 push 하도록 합니다.
+#### 바로가기는 연결되어있지 않습니다. 문제 풀이 후, 모르는 것이 있다면 구글링을 적극적으로 하도록 합시다.
+#### 해설집이 완벽하게 연결되어있지는 않지만, 해설집을 먼저 공부하고, 해설집의 문제를 푼 후, 다른 문제집의 문제들을 푸는 것을 추천합니다.
 
 ---
 # REFERENCE
-Python
+##Python
 ### 1. [VSFe](https://github.com/VSFe)
 
 #### 정보
@@ -53,7 +56,7 @@ Python
 </table>
 
 
-C++
+##C++
 ### 2. [BaaaaaaaaaaarkingDog](https://github.com/encrypted-def)
 
 <table>
