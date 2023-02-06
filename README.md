@@ -38,3 +38,38 @@
 
 ---
 # REFERENCE
+Python
+### 1. [VSFe](https://github.com/VSFe)
+
+#### 정보
+
+<table>
+    <td align="center">Github</td>
+    <td align="center">Solved</td>
+    <tr>
+        <td height="140px"> <a href="https://github.com/VSFe"><img src="https://avatars.githubusercontent.com/u/4595546?s=460&v=4" width="140px" /></a> </td>
+        <td height="140px"> <a href="https://solved.ac/klm03025"><img height="140px" width="275px" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=klm03025" /></a> </td>
+    </tr>
+</table>
+
+
+C++
+### 2. [BaaaaaaaaaaarkingDog](https://github.com/encrypted-def)
+
+<table>
+    <td align="center">Github</td>
+    <td align="center">Solved</td>
+    <tr>
+        <td height="140px"> <a href="https://github.com/encrypted-def"><img src="https://avatars.githubusercontent.com/u/20028331?s=460&u=93ce75536b9f5ab96a8bb99cbac4ccf2925dcc69&v=4" width="140px" /></a> </td>
+        <td height="140px"> <a href="https://solved.ac/BaaaaaaaaaaarkingDog"><img height="140px" width="275px" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=BaaaaaaaaaaarkingDog" /></a> </td>
+    </tr>
+</table>
+
+#### 공부자료
+
+ - [실전 알고리즘 (Blog)](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) [무료]
+ - [실전 알고리즘 (Youtube)](https://www.youtube.com/watch?v=LcOIobH7ues&list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY) [무료]
+ - [실전 알고리즘 (Github)](https://github.com/encrypted-def/basic-algo-lecture) [무료]
+
+<br><br>
+<hr>
