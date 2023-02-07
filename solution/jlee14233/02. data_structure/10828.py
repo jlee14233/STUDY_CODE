@@ -48,7 +48,7 @@ for i in range(n):
 
     if i[0]=='push':
         stack.append(int(i[1]))
-
+        
     if i[0]=='pop':
         if len(stack)==0:
             print(-1)
