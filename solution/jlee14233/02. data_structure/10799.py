@@ -110,9 +110,9 @@ sys.stdin = open('solution/jlee14233/02. data_structure/입력.txt', 'r')
 
 cnt=0
 stack=[]
-words = list(sys.stdin.readline())
+words = list(sys.stdin.readline().strip())
 
-for i in range(len(words)):    
+for i in range(len(words)):
     if words[i]=='(':
         stack.append('(')
     else:

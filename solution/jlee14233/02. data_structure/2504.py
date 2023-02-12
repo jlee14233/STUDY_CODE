@@ -163,3 +163,10 @@ print(cnt)
 그렇다면 계산을 result로 결정해서 들어가야 하는게 맞음. eval을 이용하는 방법
 
 '''
+
+f=str.replace
+try:
+    x=eval(f(f(f(f(f(input(),'()','+2'),'[]','+3'),'(','+2*('),'[','+3*['),']','][0]'))
+    print(x)
+except:x=0
+print(x)
