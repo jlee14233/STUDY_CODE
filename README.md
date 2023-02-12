@@ -18,7 +18,7 @@
 |:---:|:---:|:---:|:---:|:---:|
 | 1주차 | **수학** |()|[해설](https://blog.encrypted.gg/983)|[바로가기](./01.%20Math)|
 | 2주차 | **자료구조** |[해설](02.%20data_structure//Ch.01_기본_자료구조.pdf)|[해설](https://blog.encrypted.gg/727)|[바로가기](./02.%20data_structure)|
-| 3주차 | **재귀/DP** |[해설](03.%20DP\Ch.10_동적계획법.pdf)|[재귀해설](https://blog.encrypted.gg/943)<br>[DP해설](https://blog.encrypted.gg/974)|[바로가기](./03.%20DP)|
+| 3주차 | **재귀/DP** |[해설](03.%20DP//Ch.10_동적계획법.pdf)|[재귀해설](https://blog.encrypted.gg/943)<br>[DP해설](https://blog.encrypted.gg/974)|[바로가기](./03.%20DP)|
 | 4주차 | **그래프** |[해설](04.%20Graph//Ch.06_그래프_탐색.pdf)|[해설](https://blog.encrypted.gg/1016)|[바로가기](./04.%20graph)|
 | 5주차 | **최단경로** |()|[해설](https://blog.encrypted.gg/1037)|[바로가기](./05.%20shortest%20path)|
 | 6주차 | **이분탐색** |[해설](06.%20binary%20search//Ch.04_이분탐색.pdf)|[해설](https://blog.encrypted.gg/985)|[바로가기](./06.%20binary%20search)|
