@@ -23,7 +23,7 @@
 | 5주차 | **최단경로** |()|[해설](https://blog.encrypted.gg/1037)|[바로가기](./05.%20shortest%20path)|
 | 6주차 | **이분탐색** |[해설](06.%20binary%20search//Ch.04_이분탐색.pdf)|[해설](https://blog.encrypted.gg/985)|[바로가기](./06.%20binary%20search)|
 | 7주차 | **분할정복** |()||[바로가기](./07.%20divide%20and%20conquer)|
-| 8주차 | **그리디** |[해설](08.%20Greedy//Ch.05_탐욕법.pdf)|[해설](https://blog.encrypted.gg/975)|[바로가기](./08.%20reedy)|
+| 8주차 | **그리디** |[해설](08.%20Greedy//Ch.05_탐욕법.pdf)|[해설](https://blog.encrypted.gg/975)|[바로가기](./08.%20Greedy)|
 | 9주차 | **완전탐색, 시뮬레이션** |[해설](09.%20Brute%20Force//Ch.02_완전탐색.pdf)|[sim해설](https://blog.encrypted.gg/948)|[바로가기](./09.%20simulation)|
 | 10주차 | **구현** |[해설](10.%20implementation//Ch.08_구현력_트레이닝_Python.pdf)||[바로가기](./10.%20implementation)|
 | 11주차 | **문자열** |()|[해설](https://blog.encrypted.gg/857)|[바로가기](./11.string)|
