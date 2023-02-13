@@ -44,14 +44,31 @@ import sys
 
 sys.stdin = open('solution/jlee14233/03. DP/입력.txt', 'r')
 n=int(sys.stdin.readline().strip())
-
+ 
+## DP를 이용한 풀이 방법 
+## 피보나치 2에서 시간 초과가 발생함.
 def fibbo(n):
-    d=[0]*(n+1)
-    if n==1 or n==2:
+    memo= [0]*(n+1)
+    if n==0:
+        return 0
+    if n<= 2:
         return 1
-    if d[n]!=0:
-        return d[n]
-    d[n]=fibbo(n-1)+fibbo(n-2)
-    return d[n]
+    if memo[n]!=0:
+        return memo[n]
+    else:
+        memo[n]=fibbo(n-1) + fibbo(n-2)
+        return memo[n]
 
 print(fibbo(n))
+for i in range(0,11):
+    print(fibbo(i))
+
+##반복을 이용한 풀이 방법
+#DP보다 훨씬 빠른 속도고 풀이가 가능해진다.
+
+a=0
+b=1
+for i in range(0,n):
+    a,b=a+b,a
+
+print(a)
