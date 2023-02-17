@@ -10,40 +10,63 @@
 
 출력
 출력은 표준출력을 사용한다. 합이 n과 같게 되는 제곱수들의 최소 개수를 한 줄에 출력한다.
+
+
 '''
 
 import sys
 import math
 
-def squares(n):
-    tab=[i**2 for i in range(224)]
-    sq_list=[0]*4
-    temp=int(math.sqrt(n))
-    while n!=sum(sq_list):
-        m=n
-        sq_list[0]=temp
-        m=m-tab[temp]
-        print(tab[temp],m)
-        for i in range(1,4):
-            if m==0:
-                return sq_list
-            else:
-                t=int(math.sqrt(m))
-                m=m-t**2
-                sq_list[i]=t
-        print(sq_list)
-        
-        temp-=1
-    return sq_list
+sys.stdin = open('solution/jlee14233/03. DP/입력.txt', 'r')
+n=int(sys.stdin.readline().strip())
+def sqr(n):
+    sqr=[i*i for i in range(1,224)]
+    dp=[0 for _ in range(n+1)]
+    for i in range(1,n+1):
+        if i in sqr:
+            dp[i]=1
+        else:
+            for j in sqr:
+                if i-j>0:
+                    dp[i]=min(dp[i-j])+1
+                
+            dp[i]=min([dp[i-j] for j in sqr if i-j>0])+1
+    return(dp[i])
 
-print(squares(11339))
+print(sqr(n))        
+
+
+n = int(input())
+
+s = {i**2 for i in range(1, int(n ** 0.5) + 1)}
+
+
+def a(n):
+    if (n ** 0.5).is_integer():
+        return 1
+
+
+    for t in s:
+        if n - t in s:
+            return 2
+
+    for i in s:
+        for j in s:
+            if n - i - j in s:
+                return 3
+
+    return 4
+
+
+print(a(n))
+
 '''
-문제를 푸는 방식을 이해했음.
-내일 수정해야할 것
-sq[0][1][2][3] 의 범위를 설정해야함, 무조건적으로 내림차순으로 나타날 수 있도록 만들어야함.
-for 문을 여러개를 돌리는 이유를 알게 되었음.
-3456 같이 운좋게 아다리 맞으니까] 16 56 8 2 이런 숫자가 나타남.
-아다리가 하나도 맞지 않은 34567의 숫자는 에러가 발생하게 됨.
-또한 근사치를 보여줄 뿐이고 제대로 된 정답은 나타나지 않음.
-아다리가 진짜 개좋게 맞아야지 0으로 떨어지는 숫자를 보냄.
+점화식을 다시 수정하였다.
+만약 sqr 숫자일 경우에는 1을 출력하도록 한다
+특정 숫자 + 제곱수 숫자 = 제곱수 숫자 조합이다
+따라서 D(n+1) = D(n) +1
+인데, 이 때 가장 작은 수를 선별해서 넣기 위해서 list comprehension으로 처리 한 후 min 값을 넣고 , +1 을 넣는다.
+밑의 방식은 브루트 포스 방식으로 찾아 본 것.
+
+
 '''
