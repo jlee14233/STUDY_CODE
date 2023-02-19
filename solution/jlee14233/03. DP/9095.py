@@ -7,24 +7,24 @@
 
 '''
 
-# import sys
+import sys
 
-# sys.stdin = open('solution/jlee14233/03. DP/입력.txt', 'r')
+sys.stdin = open('solution/jlee14233/03. DP/입력.txt', 'r')
 
-# n=int(sys.stdin.readline().strip())
-# def sum_123(n):
-#     dp=[0]*(n+3)
-#     dp[1],dp[2],dp[3]=1,2,4
-#     if n>=4:
-#         for n in range(4,n+1):
-#             dp[n]=dp[n-1]+dp[n-2]+dp[n-3]
-#     return dp[n]
+n=int(sys.stdin.readline().strip())
+def sum_123(n):
+    dp=[0]*(n+3)
+    dp[1],dp[2],dp[3]=1,2,4
+    if n>=4:
+        for n in range(4,n+1):
+            dp[n]=dp[n-1]+dp[n-2]+dp[n-3]
+    return dp[n]
 
-# for i in range(n):
-#     i=int(sys.stdin.readline().strip())
-#     print(sum_123(i)) 
+for i in range(n):
+    i=int(sys.stdin.readline().strip())
+    print(sum_123(i)) 
 
-# ## 1,2,3 더하기 4
+## 1,2,3 더하기 4
 
 '''
 정수 4를 1, 2, 3의 합으로 나타내는 방법은 총 7가지가 있다. 합을 나타낼 때는 수를 1개 이상 사용해야 한다.
