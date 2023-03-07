@@ -23,4 +23,75 @@ N×N크기의 땅이 있고, 땅은 1×1개의 칸으로 나누어져 있다. �
 출력
 인구 이동이 며칠 동안 발생하는지 첫째 줄에 출력한다.
 
+10 5
+5 25
+
+0,0은 해당사항이 없다
+1,0 0,1을 stack값에 추가함.
+1,0부터 꺼내는데, visited가 안된 지역을 돈다
+25는 해당사항이 있는 값이므로.
+sum+=graph[yy][xx]
+거기에 visited[yy][xx]=True로 변경한다.
+
 '''
+
+import sys
+from collections import deque
+
+sys.stdin = open('solution/jlee14233/04. Graph/입력.txt', 'r')
+
+n,l,r=map(int,sys.stdin.readline().strip().split())
+graph=[list(map(int,sys.stdin.readline().strip().split())) for _ in range(n)]
+
+dx=[1,-1,0,0]
+dy=[0,0,-1,1]
+
+# while문으로 처리를 해야하는 데, 무엇을 기준으로 해야하나?
+# 모든 상황을 계속 봐야함.
+# 그렇다면 그래프에서 다이나믹 프로그래밍을 쓰는게 맞지 않나?
+# sum값을 어떻게 리셋할 것인지를 생각해야함. 뚫려 있다면 sum값을 리셋하지 않는 방향으로 해야하는 건데, 그 방향을 모르겠음.
+
+def bfs(x,y):
+    global move
+    stack = deque([[x,y]])
+    cont = 1
+    temp =deque([[x,y]])
+    Sum= graph[y][x]
+    visited[y][x]=True
+    while stack:
+        node = stack.popleft()
+        for i in range(4):
+            yy = dy[i] + node[1] # y축 이동
+            xx = dx[i] + node[0] # x축 이동
+            if 0<=xx<n and 0<=yy<n and l<=abs(graph[node[1]][node[0]]-graph[yy][xx])<=r and not visited[yy][xx]:
+                visited[yy][xx]=True
+                stack.append([xx,yy])
+                Sum+=graph[yy][xx]
+                cont+=1
+                temp.append([xx,yy])
+
+    peo= Sum//cont
+
+    if cont>1:
+        move = True
+        for x,y in temp:
+            graph[y][x]=peo
+    # return visited, count, Sum
+
+days=0
+
+while True:
+    move = False
+    visited=[[False]*n for _ in range(n)]
+    for x in range(n):
+        for y in range(n):
+            if visited[y][x] is False:
+                bfs(x,y)
+    if move is True:
+        days+=1
+    else:
+        break
+
+    
+print(days)
+print(graph)
