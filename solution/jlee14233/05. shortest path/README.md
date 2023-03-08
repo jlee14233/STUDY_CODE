@@ -88,7 +88,7 @@ for i in range(1, n + 1):
     else:
         print(distance[i])
 ```
-[참조 문서](https://freedeveloper.tistory.com/384')
+[참조 문서](https://freedeveloper.tistory.com/384)
 
 ##### 간단한 방식의 다익스트라 구현 성능 분석
 
@@ -227,7 +227,7 @@ for a in range(1, n + 1):
             print(graph[a][b], end=" ")
     print()
 ```
-[참조 문서](https://freedeveloper.tistory.com/385')
+[참조 문서](https://freedeveloper.tistory.com/385)
 
 #### 플로이드 워셜 알고리즘 성능 분석
 - 노드의 개수가 N일 때 알고리즘 상 N번의 단계를 수행한다.
