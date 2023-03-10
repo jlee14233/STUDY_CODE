@@ -40,16 +40,17 @@ for _ in range(r):
 
 def dijkstra(start):
     q=[]
-    heapq.heappush(q,(0,start))  ## 시작점 자신은 0이고, start는 시작 점을 의미한다.  
+    heapq.heappush(q,(0,start))  ## 시작점 거리는 0이고, start는 시작 점을 의미한다.  
     dis[start]=0 ## 거리 자기 자신은 0이다.
+    ## heap자료구조상 앞의 거리 값이 낮은 것부터 노드를 검색하게 된다, 즉 2,2 가 들어가면 2가 가장 낮으므로 2번 노드를 탐색 하게 되고 그 이후 1,5 이런게 들어가있다면 5번 노드부터 탐색하게된다. 앞의 정보가 낮은 것부터 탐색하도록 만들고, 거리 값이 낮은 것을 기준으로 최단거리를 구하기 떄문에, 항상 최단거리를 구하게 된다.
     while q: ## 큐가 존재할 때까지 반복함.
-        dist, now = heapq.heappop(q) ## 
-        if dis[now]<dist:  ## dis[1]<0  
+        dist, now = heapq.heappop(q) ## 거리값과 현재 꺼낸 노드의 값
+        if dis[now]<dist:  ## dis[1]<0  거리 값을 비교해서, 이미 처리되었으면 무시함.
             continue
-        for i in graph[now]:  ## graph[1]=(2,2)(3,3)
-            cost = dist + i[1] ## cost = 0 + 2 
-            if cost<dis[i[0]]: ## 2<1000000
-                dis[i[0]] =cost  
+        for i in graph[now]:  ## 현재 노드와 연결된 다른 인접한 노드들 확인하는 과정
+            cost = dist + i[1] ## 현재 확인한 노드의 값 = dist // i[1]인접한 다른 거리 값
+            if cost<dis[i[0]]: ## 현재 노드를 거쳐서, 다른 노드로 이동하는 거리가 더 짧은 경우
+                dis[i[0]] =cost  ## cost값을 입력하고 갱신,  cost= 현재 노드를 거쳐서, 다른 노드로 이동한 거리 
                 heapq.heappush(q,(cost,i[0]))
 
 max_value=0
