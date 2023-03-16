@@ -41,6 +41,7 @@ for _ in range(m):
     a,b= map(int,sys.stdin.readline().strip().split())
     left=binary_search(point,a)
     right=binary_search(point,b)
+    print(left,right)
     if isinstance(left,tuple):
         left=left[0]
     if isinstance(right,tuple):
