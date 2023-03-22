@@ -23,12 +23,13 @@ X의 뒤에 X'를 붙인 문자열을 X로 다시 정의한다.
 
 '''
 
+
+'''
 x='0'
 y='1'
 cnt=0
 result=x+y
 INF=59
-'''
 while cnt<6:
     if cnt%2==0:
         result = result+result[::-1]
@@ -38,40 +39,34 @@ while cnt<6:
 
     print(result)
 '''
+import math
+import sys
 
 '''
+t0	= 0,
+t2n	= tn, 그리고
+t2n+1	= 1 − tn.
 
-0110 1001
-0110 1001 1001 0110
-0110 1001 1001 0110 1001 0110 0110 1001
-0110 1001 1001 0110 1001 0110 0110 1001 1001 0110 0110 1001 0110 1001 1001 1001 0110
-
-0110 1001 1001 0110 1001 0110 0110 1001 1001 0110 0110 1001
-a=0110
-b=1001
-a b b a b a a b b a a b a b b a
-0110 1001
-abba baab 4
-xyyx yxxy 16
-ijji jiij 64
-1221 2112 256
-tsst stts 1024
-
-x=abba(16개를 포함함)
-y=baab
-xyyx yxxy 
-i=xyyx 4^3
-j=yxxy 4^3
-
-16번째 = x의 a의 마지막이므로 0
-17번째 =xy에서 y의 시작점이므로 y=baab, b=1001, 1
-32번째 = y의 b의 마지막이므로 1
-
-나머지로 계산하는 것 같은데 어떤 방식인지 조금 더 고민해보기
-
-100/64 = 1+ 36
-36/16 = 2 + 4
-4/4 = 1 + 0
-i y a
-
+t0 = 0
+t1 = 1- 0 =1
+t2 = t1 = 1
+t3 = 1- t1 =0
+t4 = t2 =1
+t5 = 1-t2=0
+t6= t3=0
+t7= 
 '''
+import sys
+
+n=int(sys.stdin.readline().strip())
+def thue_morse(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n%2==1:
+        return 1-thue_morse(n//2)
+    else:
+        return thue_morse(n//2)
+
+print(thue_morse(n-1))
